@@ -1,0 +1,30 @@
+@import './global.scss';
+
+body {
+    background-image: url('../public/assets/5151136.png');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:'gothic';
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+
+    @include mobile {
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .sections {
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+    }
+
+        h1 {
+            font-size: 50px;
+            padding: 20px;
+            color: rgb(255, 0, 0);
+
+            @include mobile {
+                padding: 10px;
+                font-size: 30px;
+            }
+        }
+}

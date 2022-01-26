@@ -1,0 +1,31 @@
+@import '../../global.scss';
+
+.logo {
+    position: relative;
+
+    img {
+        width: 200px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+        -webkit-animation:spin 4s linear infinite;
+        -moz-animation:spin 4s linear infinite;
+        animation:spin 4s linear infinite;
+        @include mobile {
+            width: 100px;
+        }
+    }
+        @-moz-keyframes spin { 100% { 
+            -moz-transform: rotate(360deg); } 
+        }
+        
+        @-webkit-keyframes spin { 100% {
+            -webkit-transform: rotate(360deg); } 
+            }
+        @keyframes spin { 100% { 
+            -webkit-transform: rotate(360deg);
+            transform:rotate(360deg); } 
+        }
+}
+

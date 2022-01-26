@@ -1,0 +1,12 @@
+@font-face {
+    font-family: gothic;
+    src: url('../public/gothic.TTF');
+}
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}) {
+        @content
+    }
+}

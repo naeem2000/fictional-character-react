@@ -1,0 +1,72 @@
+@import '../../global.scss';
+
+.NavBar {
+    padding-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+
+    @include mobile {
+        margin-left: 0;
+        margin-right: 0;
+        margin-left: 30%;
+    }
+
+/** NAVIGATION BAR */
+nav {
+  overflow: hidden;
+  background-color: rgba(51, 51, 51, 0.685);
+  position: sticky;
+  width: 100%;
+  border-radius: 30px;
+
+  @include mobile {
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+  ul {
+    text-align: center;
+    list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+
+    @include mobile {
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    li {
+      display: inline;
+      font-family: "Fira Sans", sans-serif;
+      font-size: 17px;
+      font-weight: 600;
+
+            @include mobile {
+                font-size: 13px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+      
+      a {
+        color: #f2f2f2;
+        text-decoration: none;
+        padding: 14px;
+
+        @include mobile {
+            padding: 10px;
+        }
+        
+        &:hover {
+          background-color: rgba(255, 80, 80, 0.397);
+          border-radius: 15px;
+            }
+          }
+        }
+      }
+    }
+}
