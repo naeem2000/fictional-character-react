@@ -1,0 +1,19 @@
+@import '../../global.scss';
+
+.amv {
+    display: flex;
+    justify-content: center;
+
+    iframe {
+        padding: 70px;
+        width: 70%;
+        height: 70vh;
+
+        @include mobile {
+        height: 30vh;
+        width: 100%;
+        }
+    }
+
+    
+}

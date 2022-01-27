@@ -1,7 +1,10 @@
 @import '../../global.scss';
 
-.sharingan {
+.links {
     padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
     @include mobile {
         text-align: center;
@@ -14,9 +17,9 @@
         background-color: #ffffff;
         font-family: sans-serif;
         font-weight: 600;
-        display: flex;
-        flex-direction: row-reverse;
         border-radius: 20px;
+        width: 40%;
+        
 
         @include mobile {
         display: flex;
@@ -27,6 +30,7 @@
 
         img {
             width: 300px;
+            border-radius: 20px;
 
                 @include mobile {
                     width: 328px;
@@ -38,10 +42,23 @@
             display: flex;
             flex-direction: column;
         }
-
         p {
             padding: 20px;
             font-size: 17px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                color: red;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                color: red;
+            }
 
             @include mobile {
                 font-size: 13px;
@@ -49,4 +66,5 @@
             }
         }
     }
+    
 }

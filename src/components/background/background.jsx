@@ -2,7 +2,7 @@ import './Background.scss'
 
 export default function background() {
   return (
-      <div className="background">
+      <div className="background" id='background'>
             <h1>Background</h1>
           <div className="container">
           <img src="assets/Madara_apperance.PNG.png" alt="Madara Uchiha" srcset="" />

@@ -1,9 +1,11 @@
 @import '../../global.scss';
 
+
 .NavBar {
     padding-top: 50px;
     margin-left: 20%;
     margin-right: 20%;
+    
 
     @include mobile {
         margin-left: 0;
