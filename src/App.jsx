@@ -1,26 +1,32 @@
-import Topbar       from  "./components/topbar/Topbar";
-import Intro        from  "./components/intro/Intro";
-import Portfolio    from  "./components/portfolio/Portfolio";
-import Experience   from  "./components/experience/Experience";
-import Testimonials from  "./components/testimonials/Testimonials";
-import Contact      from  "./components/contact/Contact";
-import                    "./app.scss";
-import { useState } from  "react";
-import Menu         from  "./components/menu/Menu";
+import './App.scss';
+import Logo from './components/logo/logo';
+import NavBar from './components/navbar/navbar';
+import About from './components/about/about';
+import Amv from './components/amv/amv';
+import Background from './components/background/background';
+import Personality from './components/personality/personality';
+import Appearance from './components/appearance/appearance';
+import Abilities from './components/abilities/abilities';
+import Sharingan from './components/sharingan/sharingan';
+import Rinnegan from './components/rinnegan/rinnegan';
+import Links from './components/links/links';
 
 function App() {
-  const [menuOpen,setMenuOpen] = useState(false)
   return (
-    <div className="app">
-      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <div className="sections">
-        <Intro/>
-        <Portfolio/>
-        <Experience/>
-        <Testimonials/>
-        <Contact/>
-      </div>
+    <div className="App">
+      <Logo />
+        <h1>Madara Uchiha</h1>
+      <NavBar />
+      <About />
+      <Amv />
+      <Background />
+      <Personality />
+      <Appearance />
+      <Abilities />
+      <Sharingan />
+      <Rinnegan />
+      <h1>More:</h1>
+      <Links />
     </div>
   );
 }
