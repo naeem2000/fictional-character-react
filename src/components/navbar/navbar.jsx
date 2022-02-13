@@ -1,8 +1,10 @@
 import './Navbar.scss';
 
+export default function navbar() {
+
   return (
     <div className='NavBar'>
-    <nav id="myTopnav">
+    <nav>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#background">Background</a></li>
