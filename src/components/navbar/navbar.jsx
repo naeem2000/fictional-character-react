@@ -11,9 +11,6 @@ import './Navbar.scss';
         <li><a href="#abilities">Abilities</a></li>
         <li><a href="#sharingan">Sharingan</a></li>
         <li><a href="#rinnegan">Rinnegan</a></li>
-        <li>  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a></li>
       </ul>
     </nav>
   </div>
